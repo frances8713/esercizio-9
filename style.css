@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.primo_gatto, .secondo_gatto, .terzo_gatto {
+    background-image: linear-gradient(gray, white);
+    box-shadow: 0px 0px 7px darkgray;
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 5;
+    justify-content: center;
+    border: 1px solid gainsboro;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.header1 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1;
+
+}
+
+img[src="assets/cerchio.png"] {
+    width: 50px;
+    height: 50px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cat_name {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: flex-start;
+    padding-top: 15px;
+   
+} 
+
+.date {
+    color: white; 
+}
+.dots {
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+    justify-items: end;
+    padding-right: 15px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.icons {
+    display: block;
+}
+
+.icon1 {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.footer {
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    justify-content:center;
+}
+
+span {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+ 
+    }
+    .primo_gatto {
+     grid-column: 1;
+    }
+    .secondo_gatto {
+        grid-column: 1;
+        /*grid-row: 1;*/
+    }
+
+    .terzo_gatto {
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+    }
+
+    .primo_gatto {
+        grid-column: 1;
+    }
+    .secondo_gatto {
+        grid-column: 1;
+    }
+
+    .terzo_gatto {
+        grid-column: 1;
+    }
+}
+
