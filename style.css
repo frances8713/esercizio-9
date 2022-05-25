@@ -17,6 +17,7 @@ body {
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    width: 100vw;
     
 }
 
@@ -32,7 +33,22 @@ body {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
     
+}
+
+img[src="assets/Cat_1.png"] {
+    width: 100%;
+}
+
+img[src="assets/Cat_2.png"] {
+    width: 100%;
+}
+
+img[src="assets/Cat_3.png"] {
+    width: 100%;
 }
 
 .header1 {
@@ -104,8 +120,7 @@ span {
      grid-column: 1;
     }
     .secondo_gatto {
-        grid-column: 1;
-        /*grid-row: 1;*/
+        grid-column: 2;
     }
 
     .terzo_gatto {
